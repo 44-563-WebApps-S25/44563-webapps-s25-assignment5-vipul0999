@@ -14,6 +14,20 @@
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="pets.html">Pet Options</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="basic.html">Basic</a></li>
+            <li class="nav-item"><a class="nav-link" href="advanced.html">Advanced</a></li>
+        </ul>
+    </div>
+  </nav>
+
   <div class="container"></div>
   <div class="row">
       <div class="row">
@@ -63,6 +77,8 @@
         <tr><td>A</td><td>Arctic Wolf</td><td>Amazon</td><td>Athens</td></tr>
         <tr><td>L</td><td>Labrador</td><td>Loire</td><td>London</td></tr>
         <tr><td>E</td><td>Elephant</td><td>Elbe</td><td>Edinburgh</td></tr>
+        <tr><td>V</td><td>Vulture</td><td>Vermilion</td><td>Vijayawada</td></tr>
+        <tr><td>I</td><td>Ibizan Hound</td><td>Ichetucknee</td><td>Indianapolis</td></tr>
     </tbody>
     </table>
 
@@ -90,5 +106,22 @@
           <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
       </ul>
     </div>
+
+    <form class="mt-4">
+      <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <small class="form-text text-muted">We won't share your email.</small>
+      </div>
+      <div class="form-group mt-2">
+          <label for="pet">Pet</label>
+          <input type="text" class="form-control" id="pet" placeholder="Enter your pet">
+      </div>
+      <div class="form-check mt-2">
+          <input type="checkbox" class="form-check-input" id="newsletter">
+          <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
   
 </html>
